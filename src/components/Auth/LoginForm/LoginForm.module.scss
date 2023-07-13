@@ -1,0 +1,52 @@
+.login {
+  &_info {
+    text-align: center;
+    margin-bottom: 20px;
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      word-spacing: 5px;
+    }
+    h3 {
+      color: gray;
+      letter-spacing: 1px;
+      word-spacing: 3px;
+    }
+  }
+  &_block {
+    text-align: center;
+    padding: 60px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 8px rgb(234, 231, 231);
+  }
+  &_form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    &_submit {
+      text-transform: uppercase;
+    }
+  }
+  .registration_link {
+    color: gray;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .errorMessage {
+    color: red;
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 13px;
+    height: 13px;
+  }
+  .apiError {
+    color: red;
+    padding-left: 10px;
+    font-size: 13px;
+    height: 13px;
+  }
+}

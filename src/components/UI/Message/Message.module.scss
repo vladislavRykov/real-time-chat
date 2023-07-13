@@ -1,0 +1,142 @@
+.wrapper {
+  display: flex;
+  padding: 15px 5px;
+}
+.message {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  max-width: 550px;
+  &_settings {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    transition: 0.3s;
+    height: 18px;
+    &_img {
+      font-size: 18px;
+    }
+  }
+  &_textBlock {
+    position: relative;
+    line-height: 20px;
+    &:hover .message_settings {
+      opacity: 1;
+    }
+  }
+  &_ava {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-position: center center;
+  }
+  &_text {
+    background-color: rgb(82, 82, 241);
+    border-radius: 25px 25px 25px 0px;
+    padding: 20px 20px;
+    color: white;
+    position: relative;
+    z-index: 9;
+    word-break: break-all;
+  }
+  &_date {
+    color: gray;
+    position: absolute;
+    white-space: nowrap;
+    top: 100%;
+    left: 0;
+    font-size: 13px;
+    z-index: 11;
+  }
+  &_attachments {
+    background-color: rgb(71, 71, 243);
+    border-radius: 25px;
+    padding: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    &_img {
+      max-width: 200px;
+    }
+    &_imgSingle {
+      max-width: 400px;
+      border-radius: 25px;
+    }
+  }
+  &_typing {
+    &_text {
+      padding: 0px;
+    }
+    &_img {
+      max-width: 60px;
+    }
+  }
+  &_singeFile {
+    &_text {
+      padding: 0px;
+      background-color: transparent;
+    }
+  }
+  &_audio {
+    &_text {
+      padding: 10px;
+      overflow: hidden;
+    }
+  }
+}
+.audioBlock {
+  &_tag {
+  }
+  &_img {
+    width: 100px;
+  }
+  &_btn {
+  }
+  &_time {
+    font-size: 13px;
+  }
+  &_progress {
+    transition: width 0.1s linear;
+    top: 0;
+    left: 0;
+    width: 0%;
+    position: absolute;
+    background-color: rgb(120, 120, 251);
+    height: 100%;
+    z-index: 10;
+  }
+  &_controls {
+    position: relative;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.my {
+  &_message {
+    flex-direction: row-reverse;
+  }
+  &_wrapper {
+    justify-content: flex-end;
+  }
+  &_text {
+    background-color: white;
+    border: 1px solid gray;
+    color: black;
+    border-radius: 25px 25px 0px 25px;
+  }
+  &_date {
+    left: unset;
+    right: 0;
+  }
+  &_checked {
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+  }
+  &_attachments {
+    background-color: rgb(199, 196, 196);
+  }
+}

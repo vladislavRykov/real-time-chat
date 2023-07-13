@@ -1,0 +1,14 @@
+.button {
+  background-color: lightskyblue;
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.2s;
+  &:hover {
+    background-color: rgb(168, 218, 249);
+  }
+  &:active {
+    background-color: rgb(111, 199, 253);
+  }
+}

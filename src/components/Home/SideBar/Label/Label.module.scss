@@ -1,0 +1,29 @@
+.label {
+  border-bottom: 3px double gray;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+  &_left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  &_right {
+    display: flex;
+    gap: 8px;
+    position: relative;
+  }
+  &_people {
+    font-size: 25px;
+  }
+  &_text {
+    font-size: 20px;
+  }
+  &_exit {
+  }
+  &_text {
+    font-size: 15px;
+  }
+}

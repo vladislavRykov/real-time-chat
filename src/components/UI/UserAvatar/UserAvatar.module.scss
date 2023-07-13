@@ -1,0 +1,24 @@
+.avatar {
+  &_img {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 50%;
+    max-width: 40px;
+  }
+  &_dot {
+    height: 12px;
+    width: 12px;
+    background-color: green;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+}

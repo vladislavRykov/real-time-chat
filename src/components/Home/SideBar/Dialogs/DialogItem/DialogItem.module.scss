@@ -1,0 +1,65 @@
+.wrapper {
+  padding: 20px;
+  transition: 0.35s;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(221, 227, 250);
+  }
+  &.isSelected {
+    background-color: rgb(190, 200, 244);
+  }
+}
+.dItem {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  &_ava {
+    position: relative;
+  }
+  &_content {
+    max-width: 80%;
+    flex: 1 1 auto;
+    white-space: nowrap;
+  }
+  &_fullNameBlock {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  &_fullName {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  &_textBlock {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    align-items: center;
+  }
+  &_message {
+    font-size: 13px;
+    color: gray;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1 1;
+  }
+  &_time {
+    font-size: 13px;
+    color: gray;
+  }
+  &_checked {
+  }
+  &_counter {
+    min-width: 18px;
+    height: 18px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: rgb(246, 171, 33);
+    font-size: 13px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

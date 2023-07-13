@@ -1,0 +1,21 @@
+.list {
+  position: fixed;
+  background-color: white;
+  box-shadow: 0px 4px 15px 0px black;
+  padding: 50px 55px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  z-index: 1200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &_item {
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px 15px;
+    &:hover {
+      background-color: rgb(181, 190, 198);
+    }
+  }
+}
